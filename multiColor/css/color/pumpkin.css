@@ -1,0 +1,66 @@
+/* Start Navigation Bar */
+.about h2,
+.services h2,
+.project h2,
+.review h2,
+.client h2,
+.nProject h2,
+.portfolio h2,
+.team h2,
+.galerie h2,
+.sponsor h2,
+.contact h2{
+    border-left: 3px solid #d35400;
+}
+
+.navbar .collapse ul li a{
+	transition: all 0.5s ease-in-out;
+}
+
+.navbar .collapse ul li a:hover{
+	color: #d35400 !important;
+}
+
+
+.navbar .collapse ul li a:hover,
+.navbar .collapse ul .activeLi,
+header .textH span{
+    border-bottom: 2px solid #d35400;
+}
+.review .textR,
+.review .textR button{
+    border: 2px solid #d35400
+}
+ .navbar-default .navbar-nav > .activeLi,
+ .navbar-default .navbar-nav > .activeLi > a, 
+ .navbar-default .navbar-nav > .activeLi > a:hover, 
+ .navbar-default .navbar-nav > .activeLi > a:focus,
+.review .textR i,
+footer a:hover{
+    color: #d35400;
+ }
+header .textH button:hover,
+.about .textA i,
+.review .textR button:hover,
+.team .partT ul i:hover,
+.sponsor,
+.contact button,
+footer .tags li:hover,
+footer .footerI i:hover,
+.sk-folding-cube .sk-cube:before,
+.boxColor i,
+.navbar .navbar-brand span{
+    background-color: #d35400
+}
+.team .partT ul i,
+.galerie button,
+.galerie .overlay2 span,
+.contact button,
+footer .footerI i,
+footer .tags li,
+.boxColor ul{
+    border: 3px solid #d35400;
+}
+.thisButton{
+    background-color: #d35400 !important;
+}

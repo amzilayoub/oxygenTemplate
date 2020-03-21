@@ -1,0 +1,234 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    box-shadow: border-box;
+    -moz-box-shadow: border-box;
+    -webkit-box-shadow: border-box;
+}
+img{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+a{
+    color: inherit;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+}
+.clearFix{
+    clear: both;
+}
+/* Start Loading */
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 99999;
+}
+.sk-folding-cube {
+  margin: 40vh auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #95a5a6;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+/* End Loading */
+/* Start header */
+header{
+    background-image: url('../images/04.jpg');
+    background-size: cover;
+    height: 500px
+}
+header h1{
+    text-align: center;
+    font-size: 20vw;
+    margin-bottom: 4vw;
+    margin-top: 6vw;
+    color: darkgray;
+}
+header span{
+    background-color: darkgray;
+    color: white;
+    padding: 2vw 1vw
+}
+/* End header */
+/* Start Theme Color */
+.colorPage h2,
+.colorPage p,
+.mirror h2,
+.mirror p{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.colorPage h2 span,
+.mirror h2 span{
+    border-left: 2px solid darkgray;
+    padding-left: 5px;
+}
+.colorPage .colorTheme{
+    margin-bottom: 25px;
+}
+.colorPage img{
+    margin: 0 1vw;
+    cursor: pointer;
+}
+.colorPage  li{
+    margin: 5px 8vw;
+    border: 2px solid darkgray;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.colorPage  li:hover{
+    background-color: darkgray;
+}
+.colorPage  li a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 86%;
+    background-color: darkgray;
+    opacity: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.colorPage .colorTheme:hover .overlay{
+    opacity: .5
+}
+.colorPage .colorTheme span{
+    line-height: 21;
+    margin-left: 140px;
+    padding: 5px;
+    border: 2px solid;
+    color: white;
+    cursor: pointer;
+}
+/* End Theme Color */
+/* Start Theme Miror */
+.mirrorC .overlay{
+    position: absolute;
+    width: 97.4%;
+    height: 87.9%;
+    background-color: darkgray;
+    opacity: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+.mirrorC:hover .overlay{
+    opacity: .5
+}
+.mirrorC span{
+    line-height: 31;
+    margin-left: 38vw;
+    padding: 10px;
+    border: 2px solid;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mirrorC  li{
+    margin: 15px 30vw;
+    border: 2px solid darkgray;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.mirrorC  li:hover{
+    background-color: darkgray;
+}
+.mirrorC  li a:hover{
+    color: inherit;
+    text-decoration: none;
+}
+/* End Theme Mirror */

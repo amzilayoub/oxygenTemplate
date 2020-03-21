@@ -1,0 +1,1021 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    box-shadow: border-box;
+    -moz-box-shadow: border-box;
+    -webkit-box-shadow: border-box;
+}
+img{
+    width: 100%;
+}
+a{
+    color: inherit;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+}
+.clearFix{
+    clear: both;
+}
+.about h2,
+.services h2,
+.project h2,
+.review h2,
+.client h2,
+.nProject h2,
+.portfolio h2,
+.team h2,
+.galerie h2,
+.sponsor h2,
+.contact h2{
+    width: 20%;
+    margin: 25px auto;
+    font-size: 35px;
+    text-align: center
+}
+h3{
+    font-weight: bold;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Start Navigation & Header */
+.navbar {
+    background: none;
+    border: 0;
+    border-radius: 0;
+}
+.navbar .navbar-brand {
+	color: white
+}
+.navbar .navbar-brand span{
+    font-weight: bold;
+    padding: 12px 10px;
+    color: white;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 9;
+    transition: all 1s;
+    box-shadow: 1px 1px 40px darkgray;
+    overflow: hidden;
+}
+.fixed .navbar-brand {
+	color: #777
+}
+.navbar .collapse ul li a{
+    font-weight: bold;
+	color: white
+}
+
+.fixed .collapse ul li a{
+	color: #777;
+}
+.navbar .collapse ul li a:hover,
+.navbar .collapse ul .activeLi{
+    font-weight: bold;
+    color: #95a5a6;
+    margin: 0;
+}
+ .navbar-default .navbar-nav > .activeLi > a, 
+ .navbar-default .navbar-nav > .activeLi > a:hover, 
+ .navbar-default .navbar-nav > .activeLi > a:focus {
+     border: 0;
+ }
+
+.navbar .collapse ul li a{
+	border-bottom: 2px solid transparent
+}
+.navbar-default .navbar-nav{
+    margin-right: 7vw;
+}
+header{
+    background-image: url('../images/4.jpeg');
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: bottom;
+}
+header .textH{
+    font-size: 20px;
+    color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+header .textH p{
+    text-align: left;
+}
+header .textH h2{
+    font-size: 70px;
+}
+header .textH button{
+    background: none;
+    border: 2px solid;
+    border-radius: 3px;
+    width: 250px;
+    height: 50px;
+    transition: all 1s;
+    font-size: 24px;
+}
+header .textH button:hover a{
+    text-decoration: none;
+    color: inherit;
+}
+/* End Navigation Bar */
+/* Start About */
+.about .partA,
+.about .textA{
+    text-align: center;
+    margin-top: 10px;
+}
+.about .textA{
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 1s;
+}
+.about .textA i{
+    color: white;
+	width: 255px;
+	height: 255px;
+	line-height: 255px;
+	font-size: 160px
+}
+/* End About */
+/* Start Services */
+.services{
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.services .partS{
+    text-align: center;
+    transition: all 1s;
+    transform:translateY(60px);
+    opacity: 0;
+    margin-top: 30px;
+    color: white;
+}
+.services .partS i{
+    font-size: 10em;
+    color: white;
+    padding: 10px 15px
+}
+.services .partS h3,
+.services .partS p{
+    transition: all 1s;
+}
+.services .partS:hover h3{
+    transform: translateY(-60px);
+    opacity: 0;
+}
+.services .partS p{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.services .partS:hover p {
+    transform: translateY(-40px);
+    opacity: 1;
+}
+/* End Services */
+/* Start Our Project */
+.project .partP{
+    text-align: center;
+    height: 250px;
+    overflow: hidden;
+    cursor: crosshair;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 1s;
+}
+.project h2{
+    width: 100%;
+}
+.project .partP h3,
+.project .partP p{
+    position: relative;
+    bottom: 10em;
+}
+.project .partP h3{
+    bottom: 7em;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: all 1s;
+}
+.project .partP p{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s;
+}
+.project .overlay{
+    background-color: darkgray;
+    position: absolute;
+    top: 0;
+    right: 13.1px;
+    width: 89.5%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+.project .partP:hover .overlay{
+    opacity: .5;
+}
+.project .partP:hover h3{
+    opacity: 1;
+    transform: translateY(-40px);
+}
+.project .partP:hover p{
+    opacity: 1;
+    transform: translateY(-30px);
+}
+/* End Our Project */
+/* Start Review */
+.review .textR{
+    text-align: center;
+    height: 400px;
+    margin: 10px 4vw;
+    border-radius: 2px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+.review .textR i{
+    font-size: 150px;
+    margin: 20px 0;
+}
+.review .textR button{
+    background: none;
+    border-radius: 2px;
+    width: 130px;
+    height: 40px;
+    transition: all .5s;
+}
+.review .textR button:hover a{
+    text-decoration: none;
+}
+.review .textR button:hover{
+    color: white;
+}
+/* End Review */
+/* Start Our Client */
+.client{
+    background-image: url('../images/5.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+.client .partC{
+    text-align: center;
+    margin: 20px 0;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+.client .partC img{
+    width: 70%
+}
+/* End Our Client */
+/* Start Next Project */
+.nProject .partNp{
+    text-align: center;
+}
+.nProject .partNp h3{
+    transition: all 1s ease-in-out;
+}
+.nProject .partNp p{
+    transition: all 1s ease-in-out 0.4s;
+}
+.nProject .partNp h3,
+.nProject .partNp p{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.nProject .partNp h3,
+.nProject .partNp p{
+    margin-top: 0
+}
+/* End Next Project */
+/* Start Portfolio */
+.portfolio{
+    background-image: url('../images/6.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    color: white;
+}
+.portfolio h2{
+    color: white;
+}
+.portfolio .portfolioSlider .partPo{
+    padding-left: 10vw;
+    padding-top: 1vw
+}
+.portfolio .portfolioSlider .partPo img{
+    width: 15vw
+}
+.portfolio .portfolioSlider .partPo p,
+.portfolio .portfolioSlider .partPo h3{
+    width: 77%;
+    float: right;
+    position: relative;
+    top: -20vh;
+    text-align: left
+}
+/* End Portfolio */
+/* Start Team */
+.team .partT{
+    text-align: center;
+    margin: 30px 0;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+.team .partT ul{
+    margin-right: 40px
+}
+.team .partT ul i{
+    width: 40px;
+    padding-top: 9px;
+    margin-left: 10px;
+    color: darkgray;
+    transition: all .3s;
+}
+.team .partT ul i:hover{
+    color: white;
+}
+/* End Team */
+/* Start Galerie */
+.galerie .mix{
+    overflow: hidden;
+}
+.galerie .mixItUp img{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.galerie .mix:hover img{
+    transform: scale(1.3)
+}
+.galerie button{
+    background: none;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: darkgray;
+    border-radius: 3px;
+}
+.thisButton{
+    color: white !important;
+}
+.galerie .overlay2{
+    width: 100%;
+    height: 100% !important;
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+.galerie .mix:hover .overlay2{
+    opacity: .5
+}
+.galerie .overlay2 span{
+    line-height: 230px;
+    margin: 0 10vw;
+    border-radius: 2px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End Galerie */
+/* Start Sponsor */
+.sponsor h2{
+    border-left: 2px solid white;
+    color: white;
+}
+.sponsor .sponsorImg{
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 10vw;
+}
+.sponsor .sponsorImg div{
+    margin: 0 1vw
+}
+.sponsor img{
+    width: 10VW !important;
+}
+/* End Sponsor */
+/* Start Contact */
+.contact{
+    background-image: url('../images/8.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    color: white;
+}
+.contact input[type="name"]{
+    padding: 10px;
+    margin-right: 40px;
+    margin-left: 12vw;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    color: black;
+}
+.contact input[type="text"]{
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: black;
+}
+.contact input[type="subject"],
+.contact textarea{
+    padding: 10px;
+    width: 73.6666667%;
+    margin-left: 12vw;
+    margin-bottom: 25px;
+    color: black;
+}
+.contact textarea{
+    height: 300px;
+    resize: none;
+    color: black;
+}
+.contact button{
+    width: 25%;
+    margin-left: 32vw;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: all .5s;
+    margin-bottom: 20px
+}
+.contact button:hover{
+    background: none;
+}
+/* End Contact */
+/* Start Footer */
+footer{
+    padding-top: 10px;
+    border-top: 2px solid;
+    padding-bottom: 15px;
+    background-image: url('../images/9.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+footer .footerI{
+    text-align: center;
+    margin-top: 3vw;
+}
+footer .footerI i{
+    width: 28px;
+    padding: 5px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+footer p{
+    margin-top: 3vw;
+}
+footer .tags{
+    text-align: center;
+}
+footer .tags h4{
+    font-weight: bold;
+    width: 6vw;
+    margin-left: 7.5vw;
+    border-left: 2px solid
+}
+footer .tags li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    transition: all 0.5s
+}
+footer a{
+    text-align: center;
+    margin-top: 1.5vw
+}
+/* Start Loading */
+body{
+    overflow-x: hidden;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 99999;
+}
+.sk-folding-cube {
+  margin: 40vh auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+/* End Loading */
+/* Start Box Color */
+.boxColor{
+    position: fixed;
+    top: 30vh;
+    z-index: 99999;
+    left: -0px;
+    display: none;
+    transition: all 1s;
+	left: -150px;
+}
+.boxColor i{
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 3em;
+    top: 6.9vw;
+    color: white;
+    width: 50px;
+    text-align: center;
+}
+.boxColor ul{
+    height: 95px;
+    width: 150px;
+    background-color: white;
+}
+.showBox{
+    left: 0;
+}
+.boxColor ul li{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    left: -1.5vw;
+    margin:5px 5px 0px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+.boxColor ul li:nth-child(1){
+    background-color:#e74c3c
+}
+.boxColor ul li:nth-child(2){
+    background-color:#9b59b6
+}
+.boxColor ul li:nth-child(3){
+    background-color:#95a5a6
+}
+.boxColor ul li:nth-child(4){
+    background-color:#27ae60
+}
+.boxColor ul li:nth-child(5){
+    background-color:#f39c12
+}
+.boxColor ul li:nth-child(6){
+    background-color:#3498db
+}
+.boxColor ul li:nth-child(7){
+    background-color:#d35400
+}
+.boxColor ul li:nth-child(8){
+    background-color:#34495e
+}
+.boxColor ul li:nth-child(9){
+    background-color:#f1c40f
+}
+/* End Box Color */
+
+/* Start Responsive 1300px */
+@media (max-width:1300px){
+	.container-fluid>.navbar-header{
+		width: 100%;
+		display: block;
+		position: relative;
+		height: 50px;
+	}
+	.container-fluid>.navbar-header a{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%)
+	}
+}
+/* Start Responsive 1300px */
+
+/* Start Responsive 1200px */
+@media (max-width:1200px) {
+    /* Start Navigation Bar */
+    .navbar {
+        background-color: white;
+		position: fixed !important;
+		top: 0;
+		width: 100%;
+		z-index: 99999;
+    }
+	
+    .fixed{
+        position: static
+    }
+	.container-fluid>.navbar-header a{
+		color: #777;
+	}
+	.navbar .collapse ul li a {
+    	font-weight: bold;
+		color: #777;
+	}
+    .navbar .navbar-brand{
+        width: 98vw;
+        text-align: center;
+    }
+    .navbar ul{
+        width: 93vw;
+    }
+    .navbar-default .navbar-nav{
+        margin-right: 0vw;
+    }
+    /* End Navigation Bar */
+    /* Start Services */
+    .services .partS:hover h3{
+    transform: translateY(0px);
+    opacity: 1;
+    }
+    .services .partS p{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .services .partS:hover p {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    /* End Services */
+    /* Start Our Project */
+    .project .partP{
+        height: 207px;
+    }
+    .project .overlay{
+        height: 99%;
+        width: 88%;
+    }
+    .project .partP img{
+        width: 100%
+    } 
+    /* End our Project */
+    /* Start Review */
+    .review .textR{
+        margin: 10px 3vw;
+    }
+    /* End Review */
+    /* End Review */
+    .client h2,
+    .nProject h2{
+        width: 40%;
+    }
+    .client .partC img{
+        width: 40%
+    }
+    /* End Our Client */
+    /* Start Galerie */
+    .galerie .mixItUp img{
+        transform: scale(1.2);
+    }
+    .galerie .mix:hover img{
+        transform: scale(1.4)
+    }
+    .galerie .overlay2 span{
+        line-height: 180px;
+    }
+    /* End Galerie */
+    /* Start Contact */
+    .contact input[type="text"]{
+        margin-left: 24px;
+    }
+    /* End Contact */
+}
+/* Start Responsive 960px */
+@media (max-width:960px) {
+    /* Start Header */
+	header .textH h2{
+		font-size: 30px
+	}
+    /* Start Header */
+    /* Start Galerie */
+    .galerie .overlay2 span{
+        line-height: 200px;
+        margin-left: 13vw;
+    }
+    /* End Galerie */
+        /* Start Contact */
+    .contact input[type="name"]{
+        margin-right: 0px;
+        width: 73.6666667%;
+        margin-bottom: 10px
+        
+    }
+    .contact input[type="text"]{
+        padding: 10px;
+        margin-left: 12vw;
+        width: 73.6666667%;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    /* End Contact */
+}
+/* Start Responsive 760px */
+@media (max-width:760px) {
+    .about h2,
+    .services h2,
+    .project h2,
+    .review h2,
+    .client h2,
+    .nProject h2,
+    .portfolio h2,
+    .team h2,
+    .galerie h2,
+    .sponsor h2,
+    .contact h2{
+        width: 60%;
+    }
+	
+	header .textH button{
+		width: 120px;
+		font-size: 16px;
+		height: 35px;
+	}
+	header .textH h2{
+		font-size: 20px
+	}
+    /* Start Navigation Bar */
+    .navbar .navbar-brand{
+        width: 60vw;
+        text-align: left;
+    }
+	.navbar-default .navbar-nav{
+		margin: 0;
+	}
+	.navbar .collapse ul li a:hover,
+	.navbar .collapse ul li{
+		text-align: center
+	}
+	.container-fluid>.navbar-header {
+		width: auto;
+		display:inherit;
+		position: static;
+		height: auto;
+	}
+	.container-fluid>.navbar-header a {
+		position:inherit;
+		left: inherit;
+		transform: translate(0%);
+	}
+    /* Start About */
+    .about h2{
+        width: 80%;
+    }
+    /* End About */
+    /* Start Our Project */
+    .project h2{
+        width: 80%
+    }
+    .project .textP{
+        margin-bottom: 30px;
+    }
+    .project .partP{
+        width: 100%;
+        margin-bottom: 30px;
+        margin: 30px auto;
+        height: auto;
+    }
+    .project .overlay{
+        display: none;
+    }
+    .project .partP img{
+        width: 50vw
+    }
+    .project .partP h3,
+    .project .partP p{
+        position: relative;
+        bottom: 0em;
+    }
+    .project .partP h3{
+        bottom: 0em;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .project .partP p{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .project .partP:hover .overlay{
+        opacity: 1;
+    }
+    .project .partP:hover h3{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .project .partP:hover p{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    /* End our Project */
+    /* Start Review */
+    .review .textR{
+        margin: 10px 9vw;
+    }
+    /* End Review */
+    /* End Review */
+    .client .partC img{
+        width: 35%
+    }
+    /* End Our Client */
+    /* Start Galerie */
+    .galerie .overlay2 span{
+        line-height: 65vw;
+        margin-left: 43vw;
+    }
+    /* End Galerie */
+
+}
+/* Start Responsive 580px */
+@media (max-width:580px) {
+	.navbar .collapse ul li,
+	.navbar .collapse ul .activeLi{
+        width: 100% !important;
+		clear: both;
+		text-align: center !important
+    }
+    header .textH{
+        width: 80vw;
+    }
+    /* End Navigation Bar */
+    /* Start Review */
+    .review .textR{
+        margin: 0px 0px;
+    }
+	.review .textR button{
+		margin-bottom: 30px;
+	}
+    /* End Review */
+    /* Start Review */
+    .review .textR{
+        margin: 10px 9vw;
+        height: auto;
+    }
+    /* End Review */
+    .client .partC img{
+        width: 40%
+    }
+    /* End Our Client */
+    /* Start Portfolio */
+    .portfolio .your-class .partPo img{
+        width: 15vw
+    }
+    .portfolio .your-class .partPo p,
+    .portfolio .your-class .partPo h3{
+        width: 77%;
+        float: right;
+        position: relative;
+        top: -16vh;
+        text-align: left
+    }
+	
+	.portfolio .portfolioSlider .partPo {
+		padding-left: 10vw;
+		padding-top: 20vw;
+	}
+    /* End Portfolio */
+    /* Start Box Color */
+    .boxColor{
+        display: none;
+    }
+    .boxColor i{
+        display: none;
+    }
+    .boxColor ul{
+        display: none;
+    }
+    .showBox{
+        display: none;
+    }
+    /* End Box Color */
+}
+@media (max-width: 360px) {
+    /* Start Portfolio */
+    .portfolio .your-class .partPo{
+        padding-left: 0vw;
+        padding-top: 0vw
+    }
+    .portfolio .your-class .partPo img{
+        width: 60vw;
+        margin-left: 10vw
+    }
+    .portfolio .your-class .partPo p,
+    .portfolio .your-class .partPo h3{
+        width: 100%;
+        top: 0vh;
+        text-align: center
+    }
+    .portfolio .your-class .partPo{
+        padding-left: 0vw;
+        padding-top: 14vw
+    }
+    /* End Portfolio */
+    /* Start Galerie */
+    .galerie .overlay2 span{
+        line-height: 55vw;
+        margin-left: 33vw;
+        opacity: 1;
+    }
+    .galerie .overlay2{
+        opacity: 0.2;
+    }
+    /* End Galerie */
+    /* Start Footer */
+    footer a{
+        text-align: center;
+        margin-top: 40%;
+    }
+    /* End Footer */
+}
